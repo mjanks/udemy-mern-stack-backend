@@ -28,7 +28,7 @@ app.use((error, req, res, next) => {
 mongoose
   .connect(
     'mongodb+srv://mjanks:HaZ74Mw06blOb1mK@cluster0.n40pp.mongodb.net/places?retryWrites=true&w=majority',
-    { useNewUrlParser: true, useUnifiedTopology: true }
+    { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }
   )
   .then(() => {
     app.listen(5000);
