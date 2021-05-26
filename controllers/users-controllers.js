@@ -32,7 +32,7 @@ const signup = async (req, res, next) => {
     );
   }
 
-  const { name, email, password, places } = req.body;
+  const { name, email, password } = req.body;
 
   let existingUser;
   try {
@@ -57,7 +57,7 @@ const signup = async (req, res, next) => {
     image:
       'https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg',
     password,
-    places,
+    places: [],
   });
 
   try {
