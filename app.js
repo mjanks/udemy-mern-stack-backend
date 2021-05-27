@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/places', placesRoutes); // => /api/places/...
+app.use('/api/places', placesRoutes);
 app.use('/api/users', usersRoutes);
 
 app.use((req, res, next) => {
