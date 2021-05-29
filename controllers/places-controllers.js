@@ -83,8 +83,7 @@ const createPlace = async (req, res, next) => {
     description,
     address,
     location: coordinates,
-    image:
-      'https://www.walksofnewyork.com/blog/wp-content/uploads/2013/07/empire-state-building-nyc-skyline.jpg',
+    image: req.file.path,
     creator,
   });
 
